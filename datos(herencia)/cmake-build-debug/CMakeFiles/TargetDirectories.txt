@@ -1,0 +1,3 @@
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/datos(herencia)/cmake-build-debug/CMakeFiles/datos_herencia_.dir
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/datos(herencia)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/datos(herencia)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
