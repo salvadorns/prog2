@@ -17,7 +17,6 @@ datos ::datos(string nombre, string dni, string apellido, string mail) {
     d = dni;
     ape = apellido;
     ma = mail;
-
 }
 
 void datos::setnom(string nombre) {

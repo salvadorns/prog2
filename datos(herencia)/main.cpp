@@ -63,7 +63,8 @@ int main() {
                     cin >> nom;
                     pro[t].setnom(nom);
                     cout << "Ingrese el apellido" << endl;
-                    cin >> ape;
+                    cin.ignore();
+                    getline(cin,ape);
                     pro[t].seta(ape);
                     cout << "Ingrese el dni" << endl;
                     cin >> dni;
@@ -72,7 +73,8 @@ int main() {
                     cin >> mail;
                     pro[t].setm(mail);
                     cout << "Titulo del profesor " << endl;
-                    cin >> ti;
+                    cin.ignore();
+                    getline(cin, ti);
                     pro[t].sett(ti);
                 } else if (q == 2) {
                     cout << "AlUMNO" << endl;
@@ -80,7 +82,8 @@ int main() {
                     cin >> nom;
                     al[p].setnom(nom);
                     cout << "Ingrese el apellido" << endl;
-                    cin >> ape;
+                    cin.ignore();
+                    getline(cin, ape);
                     al[p].seta(ape);
                     cout << "Ingrese la edad" << endl;
                     cin >> edad;
@@ -92,7 +95,8 @@ int main() {
                     cin >> mail;
                     al[p].setm(mail);
                     cout << "Ingrese la carrera" << endl;
-                    cin >> car;
+                    cin.ignore();
+                    getline(cin, car);
                     al[p].setc(car);
                 } else {
                     cout << "La opcion ingresada no es correcta" << endl;
@@ -142,7 +146,7 @@ int main() {
 
                 }
                 if (num == -1) {
-                    cout << "El dni ingresado no se encuentra en nuestra bsae de datos" << endl;
+                    cout << "El dni ingresado no se encuentra en nuestra base de datos" << endl;
                     break;
                 }
                 cout << "cuantas materias sera titular el profesor" << endl;
@@ -190,7 +194,7 @@ int main() {
             }
             case 5: {
                 int o;
-                cout << "Quiere modificat los detos de un profesor (1) o un alumno (2)" << endl;
+                cout << "Quiere modificar los datos de un profesor (1) o un alumno (2)" << endl;
                 cin >> q;
                 if (q == 1) {
                     cout << "Ingrese el dni del profesor" << endl;
@@ -203,6 +207,7 @@ int main() {
                     }
                     if (num == -1) {
                         cout << "El dni ingresado no se encuentra en nuestra base de datos" << endl;
+                    break;
                     }
                     do {
                         cout << "(1). Cambiar nombre" << endl;
@@ -250,6 +255,10 @@ int main() {
                     for (int i = 0; i < 10; i++) {
                         if (al[i].getd() == dni) {
                             num = i;
+                            break;
+                        }
+                        if(num == -1){
+                            cout<<"El dni no se encuentra en nuestra base de datos"<<endl;
                             break;
                         }
                     }
@@ -319,6 +328,7 @@ int main() {
                     }
                     if (num == -1) {
                         cout << "El dni ingresado no se encuentra en nuestra base de datos" << endl;
+                    break;
                     }
                     cout << "Los datos del profesor son: " << endl;
                     cout << "Nombre--> " << pro[num].getnom() << endl;
@@ -337,6 +347,7 @@ int main() {
                     }
                     if (num == -1) {
                         cout << "El dni ingresado no se encuentra en nuestra base de datos" << endl;
+                    break;
                     }
                     cout << "Los datos del alumno son: " << endl;
                     cout << "Nombre--> " << al[num].getnom() << endl;
@@ -359,4 +370,8 @@ int main() {
             break;
         }
     }while (x != 7);
-    }
+
+delete[] m;
+delete[] al;
+delete[] pro;
+}
