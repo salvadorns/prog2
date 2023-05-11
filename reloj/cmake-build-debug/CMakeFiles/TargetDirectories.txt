@@ -1,0 +1,3 @@
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/reloj/cmake-build-debug/CMakeFiles/reloj.dir
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/reloj/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog 2/reloj/cmake-build-debug/CMakeFiles/rebuild_cache.dir
