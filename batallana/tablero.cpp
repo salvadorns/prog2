@@ -59,46 +59,7 @@ void Tablero ::mostrar()
 }
 
 
-/*void Tablero::ingresarBarcos() {
-    int numBarcos = 7;
-    int barcosRestantes[4] = {1, 3, 2, 1};
-    int tamaniosBarcos[4] = {4, 3, 3, 2};
-
-    while (numBarcos > 0) {
-        int fila, columna;
-        cout << "Ingrese la posicion inicial (fila columna) del barco de tamano " << tamaniosBarcos[numBarcos - 1] << ": ";
-        cin >> fila >> columna;
-
-        int orientacion;
-        cout << "Ingrese la orientacion del barco (0: horizontal, 1: vertical): ";
-        cin >> orientacion;
-
-        // Verificar si se puede colocar el barco en las coordenadas ingresadas
-        bool sePuedeColocar = true;
-
-        for (int i = 0; i < tamaniosBarcos[numBarcos - 1]; i++) {
-            if ((orientacion == 0 && columna + i >= columnas) || (orientacion == 1 && fila + i >= filas) || tablero[fila + (orientacion * i)][columna + ((1 - orientacion) * i)] != 0) {
-                sePuedeColocar = false;
-                break;
-            }
-        }
-
-        // Si se puede colocar el barco, se coloca en el tablero
-        if (sePuedeColocar) {
-            for (int i = 0; i < tamaniosBarcos[numBarcos - 1]; i++) {
-                tablero[fila + (orientacion * i)][columna + ((1 - orientacion) * i)] = 1;
-            }
-
-            barcosRestantes[numBarcos - 1]--;
-            if (barcosRestantes[numBarcos - 1] == 0) {
-                numBarcos--;
-            }
-        }
-        else {
-            cout << "No se puede colocar el barco en esa posición. Intente nuevamente." << endl;
-        }
-    }
-}*/
+/*
 bool Tablero:: sePuedeColocarBarco(int fila, int columna, int orientacion, int tamano){
     for (int i = 0; i < tamano; i++) {
         if ((orientacion == 0 && columna + i >= columnas) || (orientacion == 1 && fila + i >= filas) ||
@@ -139,4 +100,4 @@ void Tablero::ingresarBarcos() {
             cout << "No se puede colocar el barco en esa posición. Intente nuevamente." << endl;
         }
     }
-}
+}*/

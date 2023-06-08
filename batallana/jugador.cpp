@@ -56,11 +56,9 @@ bool jugador:: sePuedeColocarBarco(int fila, int columna, int orientacion, int t
 
 }
 void jugador::colocarBarcos() {
-    /*int numBarcos = 4;
-    int barcosRestantes[4] = {1, 3, 2, 1};
-    int tamaniosBarcos[4] = {4, 3, 3, 2};*/
+
     int numBarcos = 7;
-    int barcosRestantes[7] = {1, 1, 1, 1, 3, 2, 1};
+    int barcosRestantes[7] = {1, 1, 1, 1, 1, 1, 1};
     int tamaniosBarcos[7] = {1, 2, 2, 3, 3, 3, 4};
 
     while (numBarcos > 0) {
@@ -99,6 +97,9 @@ void jugador::colocarBarcos() {
         }
     }
 }
+
+
+
 
 void jugador::mostrarTablero() {
     for (int i = 0; i < filas; i++) {

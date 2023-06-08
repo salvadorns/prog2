@@ -8,7 +8,7 @@ int main() {
     Tablero t;
     persona p;
     persona p2;
-    t.mostrar();
+    //t.mostrar();
     string n1,n2;
 
         int filas = 9;
@@ -31,10 +31,16 @@ int main() {
 
 
   jugador j(p.getn(),filas, columnas); // objeto Jugador con filas y columnas seteadas
-    cout<<"Jugador "<<p.getn()<<endl;
+    cout<<"Jugador 1"<<p.getn()<<endl;
 
     j.colocarBarcos(); // Colocar los barcos en el tablero
     j.mostrarTablero(); // Mostrar el tablero con los barcos
+
+    jugador j2(p2.getn(),filas,columnas); // arranca el objeto dos para el jugador con col y filas seteadas
+    cout<<"AHORA: Jugador 2 "<<p2.getn()<<endl;
+
+    j2.colocarBarcos();
+    j2.mostrarTablero();
 
         return 0;
     }
