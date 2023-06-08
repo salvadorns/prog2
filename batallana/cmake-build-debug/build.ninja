@@ -61,8 +61,8 @@ build CMakeFiles/batallana.dir/jugador.cpp.obj: CXX_COMPILER__batallana_Debug C$
   OBJECT_DIR = CMakeFiles\batallana.dir
   OBJECT_FILE_DIR = CMakeFiles\batallana.dir
 
-build CMakeFiles/batallana.dir/juego.cpp.obj: CXX_COMPILER__batallana_Debug C$:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog$ 2/batallana/juego.cpp || cmake_object_order_depends_target_batallana
-  DEP_FILE = CMakeFiles\batallana.dir\juego.cpp.obj.d
+build CMakeFiles/batallana.dir/tablero.cpp.obj: CXX_COMPILER__batallana_Debug C$:/Users/Exequiel/Dropbox/Universidad-Salvador-ucc/SIst/Prog$ 2/batallana/tablero.cpp || cmake_object_order_depends_target_batallana
+  DEP_FILE = CMakeFiles\batallana.dir\tablero.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\batallana.dir
   OBJECT_FILE_DIR = CMakeFiles\batallana.dir
@@ -75,7 +75,7 @@ build CMakeFiles/batallana.dir/juego.cpp.obj: CXX_COMPILER__batallana_Debug C$:/
 #############################################
 # Link the executable batallana.exe
 
-build batallana.exe: CXX_EXECUTABLE_LINKER__batallana_Debug CMakeFiles/batallana.dir/main.cpp.obj CMakeFiles/batallana.dir/jugador.cpp.obj CMakeFiles/batallana.dir/juego.cpp.obj
+build batallana.exe: CXX_EXECUTABLE_LINKER__batallana_Debug CMakeFiles/batallana.dir/main.cpp.obj CMakeFiles/batallana.dir/jugador.cpp.obj CMakeFiles/batallana.dir/tablero.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\batallana.dir

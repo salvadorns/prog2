@@ -9,28 +9,20 @@
 #include <iostream>
 using namespace std;
 
-class tablero
-{
-private:
-    int l;
-    int x=45, y=16;
-    int recibido[100];
-    char matriz[16][45]; //Esta Matriz esta invertida su x e y
-    void pintar(int,int);
-    bool Flota[10][7]={false}; //esta es una matriz espejo que nos va a indicar donde estan los barcos
-    void pintar(int x, int y,char vr);
-    void ponerBarco(int);
-
+class Tablero {
+    static const int columnas = 9;
+    static const int filas = 9;
+    int matriz[filas][columnas];
+    int tablero[filas][columnas];
 
 public:
-    tablero();
-    void PintarTablero();
-    void Recibir(int x, int y);
-    void crearMatriz();
-    void crearFlota();
-    bool hayBarco(int x, int y);
+    Tablero();
+
+    void mostrar();
+    void ingresarBarcos();
+    bool sePuedeColocarBarco(int fila, int columna, int orientacion, int tamano);
+
+
 };
-
-
 
 #endif //BATALLANA_TABLERO_H

@@ -10,7 +10,18 @@
 using namespace std;
 
 class jugador {
-    tablero* tablero;
+    int filas = 9;
+    int columnas = 9;
+    int** tablero;
+    Tablero t;
+
+public:
+    jugador();
+    jugador(string ,int filas,int columnas);
+    ~jugador();
+    void mostrarTablero();
+    void colocarBarcos();
+    bool sePuedeColocarBarco(int fila, int columna, int orientacion, int tamano);
 
 };
 class persona :public jugador{
